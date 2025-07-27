@@ -1,0 +1,61 @@
+# requirements_fixed.txt
+# LLM 基本面分析代理 - 修复版本依赖包
+
+# 核心数据处理
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# 金融数据
+yfinance>=0.2.18
+
+# 机器学习和向量化
+sentence-transformers>=2.2.0
+scikit-learn>=1.3.0
+faiss-cpu>=1.7.4
+
+# 回测框架
+vectorbt>=0.25.0
+
+# LLM 和语言模型
+langchain>=0.1.0
+langchain-openai>=0.1.0
+openai>=1.12.0
+
+# 数据解析
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+html5lib>=1.1
+
+# 网络请求
+requests>=2.31.0
+urllib3>=2.0.0
+
+# 可选: Pinecone 向量数据库
+pinecone-client>=3.0.0
+
+# 报告生成 (可选)
+jinja2>=3.1.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# 系统工具
+python-dotenv>=1.0.0
+tqdm>=4.65.0
+click>=8.1.0
+
+# 开发和测试 (可选)
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.0.0
+flake8>=6.0.0
+
+# 数据存储
+pyarrow>=12.0.0  # for parquet files
+openpyxl>=3.1.0  # for Excel files
+
+# 日志和监控
+structlog>=23.1.0
+
+# 性能优化
+numba>=0.57.0
