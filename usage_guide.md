@@ -1,7 +1,7 @@
 ### 1. 环境准备
 
 ```bash
-# 创建虚拟环境 (推荐)
+# 创建虚拟环境
 python -m venv financial_agent_env
 source financial_agent_env/bin/activate  # Linux/Mac
 # 或 financial_agent_env\Scripts\activate  # Windows
@@ -244,24 +244,6 @@ pip install --upgrade -r requirements.txt
 # 监控日志文件
 tail -f financial_agent.log
 ```
-
-## 🔄 版本历史
-
-### v2.0.0 (当前版本)
-- ✅ 完全移除SEC数据依赖
-- ✅ 简化为YFinance单一数据源
-- ✅ 减少70%的依赖库
-- ✅ 提升95%+的成功率
-- ✅ 增加智能数据切片功能
-
-### v1.0.0 (原版本)
-- ❌ 复杂的SEC数据爬取
-- ❌ 多种数据解析器
-- ❌ 20+个依赖库
-- ❌ 60-80%成功率
-
-## 🤝 贡献指南
-
 欢迎提交Issue和Pull Request！
 
 ### 开发环境设置
@@ -282,11 +264,6 @@ black financial_agent.py
 # 代码检查
 flake8 financial_agent.py
 ```
-
-## 📄 许可证
-
-MIT License - 详见LICENSE文件
-
 ## 🙏 致谢
 
 - [YFinance](https://github.com/ranaroussi/yfinance) - 提供可靠的金融数据
