@@ -1,23 +1,7 @@
-# 🚀 LLM财务分析代理 - 优化版
-
-> 基于YFinance + LLM的智能股票分析工具，简化依赖，提升稳定性
-
-## ✨ 主要特点
-
-- ✅ **完全基于YFinance** - 无需SEC数据爬取，数据获取稳定可靠
-- ✅ **智能数据切片** - 自动适应LLM输入限制，避免token超限
-- ✅ **综合分析能力** - 结合基本面和技术面，生成投资建议
-- ✅ **智能股票排名** - 批量分析时自动生成综合排名和组合建议
-- ✅ **简化依赖** - 仅需6个核心库，安装简单快速
-- ✅ **高成功率** - 95%+的数据获取成功率
-- ✅ **缓存优化** - 减少重复API调用，节省成本
-
-## 🚀 快速开始
-
 ### 1. 环境准备
 
 ```bash
-# 创建虚拟环境 (推荐)
+# 创建虚拟环境
 python -m venv financial_agent_env
 source financial_agent_env/bin/activate  # Linux/Mac
 # 或 financial_agent_env\Scripts\activate  # Windows
@@ -62,7 +46,7 @@ python financial_agent.py --mode batch --tickers AAPL MSFT GOOGL --show-ranking
 python financial_agent.py --mode single --ticker AAPL --output results.json
 ```
 
-## 🏆 新增排名功能
+## 新增排名功能
 
 ### 智能股票排名
 
@@ -79,16 +63,16 @@ python financial_agent.py --mode batch --tickers AAPL MSFT GOOGL AMZN --show-ran
 
 **输出示例:**
 ```
-🏆 股票排名分析结果
-🥇 AAPL   | 评分: 9.2/10 | 基本面优秀，技术面强劲
-🥈 MSFT   | 评分: 8.8/10 | 估值合理，成长稳定
-🥉 GOOGL  | 评分: 8.1/10 | 创新能力强，估值略高
+股票排名分析结果
+ AAPL   | 评分: 9.2/10 | 基本面优秀，技术面强劲
+ MSFT   | 评分: 8.8/10 | 估值合理，成长稳定
+ GOOGL  | 评分: 8.1/10 | 创新能力强，估值略高
 
-💼 推荐投资组合配置:
+推荐投资组合配置:
 AAPL: 40.0%  MSFT: 30.0%  GOOGL: 20.0%  现金: 10.0%
 ```
 
-## 📊 功能展示
+## 功能展示
 
 ### 单股票分析示例
 
@@ -133,7 +117,7 @@ python financial_agent.py --mode batch --tickers AAPL MSFT GOOGL AMZN
 - 成功率报告
 - 批量摘要
 
-## 🔧 配置选项
+## 配置选项
 
 ### 环境变量
 
@@ -161,7 +145,7 @@ python financial_agent.py [选项]
   --help                  显示帮助信息
 ```
 
-## 📁 输出文件
+## 输出文件
 
 系统会在以下目录保存分析结果：
 
@@ -179,7 +163,7 @@ data/
 - `batch_analysis.json` - 批量分析汇总
 - `financial_agent.log` - 系统日志
 
-## 🏗️ 系统架构
+## 系统架构
 
 ```
 YFinance数据获取 → 技术指标计算 → LLM智能分析 → 信号生成 → 股票排名 → 回测验证
@@ -204,7 +188,7 @@ YFinance数据获取 → 技术指标计算 → LLM智能分析 → 信号生成
    - 技术面解读
    - 投资建议生成
    - 风险识别
-   - **🆕 智能股票排名**
+   - **智能股票排名**
 
 4. **排名系统** - 投资组合优化
    - 综合评分 (基本面40% + 技术面30% + 风险30%)
@@ -216,7 +200,7 @@ YFinance数据获取 → 技术指标计算 → LLM智能分析 → 信号生成
    - 风险指标计算
    - 夏普比率等
 
-## 🛠️ 故障排除
+## 故障排除
 
 ### 常见问题
 
@@ -297,31 +281,6 @@ pip install --upgrade -r requirements.txt
 tail -f financial_agent.log
 ```
 
-## 🔄 版本历史
-
-### v2.1.0 (当前版本)
-- ✅ 新增智能股票排名功能
-- ✅ 批量分析自动生成综合排名
-- ✅ 基于基本面+技术面+风险的多维度评估
-- ✅ 自动推荐投资组合配置比例
-- ✅ 增加市场环境分析和投资建议
-- ✅ 新增 --show-ranking 命令行选项
-
-### v2.0.0
-- ✅ 完全移除SEC数据依赖
-- ✅ 简化为YFinance单一数据源
-- ✅ 减少70%的依赖库
-- ✅ 提升95%+的成功率
-- ✅ 增加智能数据切片功能
-
-### v1.0.0 (原版本)
-- ❌ 复杂的SEC数据爬取
-- ❌ 多种数据解析器
-- ❌ 20+个依赖库
-- ❌ 60-80%成功率
-
-## 🤝 贡献指南
-
 欢迎提交Issue和Pull Request！
 
 ### 开发环境设置
@@ -342,11 +301,6 @@ black financial_agent.py
 # 代码检查
 flake8 financial_agent.py
 ```
-
-## 📄 许可证
-
-MIT License - 详见LICENSE文件
-
 ## 🙏 致谢
 
 - [YFinance](https://github.com/ranaroussi/yfinance) - 提供可靠的金融数据
