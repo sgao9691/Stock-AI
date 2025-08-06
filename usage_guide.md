@@ -44,6 +44,12 @@ python financial_agent.py --mode batch --tickers AAPL MSFT GOOGL --show-ranking
 
 # 保存结果
 python financial_agent.py --mode single --ticker AAPL --output results.json
+
+# Analyze all NASDAQ-100 stocks
+python stock_analysis.py --mode nasdaq100
+
+# Analyze first 20 NASDAQ-100 stocks (for testing)
+python stock_analysis.py --mode nasdaq100 --limit 20
 ```
 
 ## 新增排名功能
